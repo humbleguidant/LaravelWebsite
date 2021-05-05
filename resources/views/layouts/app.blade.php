@@ -42,15 +42,20 @@ Project: Counselling Website
     <link rel="stylesheet" href="css/schedule.css">
     
 </head>
+
     <!-- Display contact information at the top. -->
     <div class="wrap">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 d-flex align-items-center">
+                    
+                    <!-- Contact Number -->
 						<p class="mb-0 phone pl-md-2">
 							<span class="fa fa-phone mr-1"> (250) 826-9323</span>  	 
 						</p>
 					</div>
+                    
+                    <!-- Email --> 
 					<div class="col-md-6 d-flex justify-content-md-end">					
 			    	<p class="mb-0 d-flex">
 						  <span class="fa fa-paper-plane mr-1" style='color:azure'> counseling4life.ca@gmail.com</span>
@@ -59,6 +64,7 @@ Project: Counselling Website
 				</div>
 			</div>
 		</div>
+        
 <!-- The body contains all of the content. -->
 <body>
 
@@ -73,20 +79,33 @@ Project: Counselling Website
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
       
-      <!-- This div displays all of the menu options in the -->
+      <!-- This div displays all of the menu options in the navigation bar. -->
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
+              <!-- Go to home page. -->
 	          <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+              <!-- Go to about page. -->
 	          <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+              <!-- Go to services page. -->
 	          <li class="nav-item"><a href="/services" class="nav-link">Services</a></li>
+              <!-- Go to pricing page. -->
 	          <li class="nav-item"><a href="/pricing" class="nav-link">Pricing</a></li>
-            <li class="nav-item"><a href="/psychotherapy" class="nav-link">Psychotherapy</a></li>
-			      <li class="nav-item"><a href="/teletherapy" class="nav-link">Tele-therapy</a></li>
+              <!-- Go to psychotherapy page. -->
+              <li class="nav-item"><a href="/psychotherapy" class="nav-link">Psychotherapy</a></li>
+			  <!-- Go to tele-therapy page. -->
+              <li class="nav-item"><a href="/teletherapy" class="nav-link">Tele-therapy</a></li>
+              
+              <!-- If the user is a guest then display the login and register menu option. -->
 			  @guest
                 <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
                 @if (Route::has('register'))
                   <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Schedule Appointment</a></li>
                 @endif
+              
+              <!-- 
+                   Otherwise if the user is signed in then display the name of the user,
+                   which will redirect to schedule appointment, and display the logout option.     
+               -->
               @else
                 <li class="nav-item dropdown">
                   <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
