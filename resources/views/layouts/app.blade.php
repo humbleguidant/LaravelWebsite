@@ -1,3 +1,11 @@
+<!-- 
+Author: Aubrey Nickerson
+Date May 3rd, 2020
+Program: app.blade.php
+Project: Counselling Website
+-->
+
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -34,6 +42,7 @@
     <link rel="stylesheet" href="css/schedule.css">
     
 </head>
+    <!-- Display contact information at the top. -->
     <div class="wrap">
 			<div class="container">
 				<div class="row">
@@ -50,15 +59,21 @@
 				</div>
 			</div>
 		</div>
+<!-- The body contains all of the content. -->
 <body>
+
+    <!-- This div displays the navigation bar with all of the menu options. -->
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
       <span class="navbar-brand">Counselling4Life</span>
+      
+      <!-- This button displays "Menu" if the users screen is too small and it will display the menu options. -->      
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
-
+      
+      <!-- This div displays all of the menu options in the -->
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
@@ -93,7 +108,12 @@
 	      </div>
 	    </div>
 	  </nav>
-
+        
+        <!-- 
+             Display other html files in the yield content.
+             The other html files will extend the content like
+             @extend('content') 
+         -->
         <main class="py-4">
             @yield('content')
         </main>
