@@ -32,7 +32,7 @@ Project: Counselling Website
                         </div>
                     @endif
                     
-                    <!-- If there is an error then display the error message under the text field where the error occured. 
+                    <!-- If there is an error then display the error message under the text field where the error occured. -->
                     @if(count($errors) > 0)
                         <div class="alert alert danger">
                             <button type="button" class="close" data-dismiss="alert" style='color:red'>x</button>
