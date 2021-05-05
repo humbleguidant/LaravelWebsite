@@ -1,3 +1,13 @@
+/**
+Author: Aubrey Nickerson
+Date: May 7th, 2020
+Program: main.js
+Project: Counselling Website
+
+
+This program handles all of the animation on the welsome page
+**/
+
 (function($) {
 
 	"use strict";
