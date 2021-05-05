@@ -1,14 +1,12 @@
+
+<?php
+namespace App\Http\Controllers;
 /*
 Author: Aubrey Nickerson
 Date: May 5th, 2020
 Program: HomeController.php
 Project: Counselling Website Project
 */
-
-<?php
-
-namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 
 // This controller checks if the user has logged in to the page
