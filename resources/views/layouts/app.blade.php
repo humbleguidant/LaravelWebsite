@@ -7,7 +7,9 @@ Project: Counselling Website
 
 This is the menu navigation bar of the website.
 The menu options are Home, About, Services, Pricing,
-Psychotherapy, Teletherapy, Login, and Schedule Appointment.
+Psychotherapy, Teletherapy, Login, and Schedule Appointment. If the
+user is signed in then the Login option is hidden and the Schedule
+Appointment is replaced to the users first name and last name.
 This page extends the login page, register page, reset password page,
 verify email page, and schedule appointment page.
 -->
