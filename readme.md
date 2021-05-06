@@ -15,5 +15,5 @@ The web pages of this website is in the resources/views/. The back end logic is 
 4. Home page is accessible after successfully logging in. <br/><br/>
 ![alt text](https://github.com/humbleguidant/LaravelWebsite/blob/main/Screenshots/Home.PNG?raw=true) <br /> <br />
 5. After requesting an appointment, an email is sent to the counselor with the patients details. <br/> <br/>
-![alt text](https://github.com/humbleguidant/LaravelWebsite/blob/main/Screenshots/Home.PNG?raw=true) <br /> <br />
+![alt text](https://github.com/humbleguidant/LaravelWebsite/blob/main/Screenshots/AppointmentRequest.PNG?raw=true) <br /> <br />
 # Non Functional Requirements
