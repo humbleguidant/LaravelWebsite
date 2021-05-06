@@ -40,7 +40,7 @@ class RequestAppointmentController extends Controller
             'message' => $request->message
         );
 
-        // Pass array to RequestAppointment object.
+        // Pass array to RequestAppointment object located in /app/Http/Mail.
         Mail::to('counseling4life.ca@gmail.com')->send(new RequestAppointment($user, $data));
         return back()->with('success', 'Your request has been sent and will be reviewed. You will be contacted by email or phone as soon as possible.');
     }
