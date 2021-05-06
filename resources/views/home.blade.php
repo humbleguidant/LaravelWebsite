@@ -6,6 +6,10 @@ Author: Aubrey Nickerson
 Date May 3rd, 2020
 Program: home.blade.php
 Project: Counselling Website
+
+This is the request appointment page.
+When the user logs in, they are redirected 
+to this page. The page includes four 
 -->
 
 <!-- Display the schedule appointment form -->
