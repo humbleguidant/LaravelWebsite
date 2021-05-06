@@ -6,8 +6,12 @@ The web pages of this website is in the resources/views/. The back end logic is 
 
 # Functional Requirements
 1. User should be able to create account and wait for an email <br/> <br/>
-![alt text](https://github.com/humbleguidant/LaravelWebsite/blob/main/Screenshots/Register.PNG?raw=true) <br /> <br />
-3. User should be able to login.<br/><br/>
+![alt text](https://github.com/humbleguidant/LaravelWebsite/blob/main/Screenshots/Register.PNG?raw=true) <br />
+![alt text](https://github.com/humbleguidant/LaravelWebsite/blob/main/Screenshots/Verify.PNG?raw=true)  <br /> <br />
+2. User should see an email on their personal account <br/> <br/>
+![alt text](https://github.com/humbleguidant/LaravelWebsite/blob/main/Screenshots/VerifyEmail.PNG?raw=true)  <br /> <br />
+3. 
+4. User should be able to login.<br/><br/>
 ![alt text](https://github.com/humbleguidant/LaravelWebsite/blob/main/Screenshots/Login.PNG?raw=true) <br /> <br />
 3. Home page is accessible after successfully logging in. <br/><br/>
 ![alt text](https://github.com/humbleguidant/LaravelWebsite/blob/main/Screenshots/Home.PNG?raw=true) <br /> <br />
