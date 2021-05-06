@@ -5,7 +5,7 @@ Program: main.js
 Project: Counselling Website
 
 
-This program handles all of the animation on the welsome page
+This handles all of the animation on every page.
 **/
 
 (function($) {
