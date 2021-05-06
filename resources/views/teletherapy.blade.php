@@ -1,3 +1,10 @@
+<!-- 
+Author: Aubrey Nickerson
+Date: May 17th, 2020
+Program: teletherapy.blade.php
+Project: Counselling Website
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,6 +12,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+    <!-- Add Stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,15 +28,20 @@
   </head>
   <body>
 
+<!-- Display contact information at the top. -->
   <div class="wrap">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 d-flex align-items-center">
+                    
+                    <!-- Contact Number -->
 						<p class="mb-0 phone pl-md-2">
 							<span class="fa fa-phone mr-1"> (250) 826-9323</span>  	 
 						</p>
 					</div>
-					<div class="col-md-6 d-flex justify-content-md-end">					
+					<div class="col-md-6 d-flex justify-content-md-end">
+                    
+                    <!-- Email -->
 			    		<p class="mb-0 d-flex">
 							<span class="fa fa-paper-plane mr-1" style='color:azure'> counseling4life.ca@gmail.com</span>
 			    		</p>
@@ -37,25 +50,42 @@
 			</div>
 		</div>
     
+    <!-- The navbar contains all of the menu options. -->
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <span class="navbar-brand">Counselling4Life</span>
+          
+          <!-- This button displays "Menu" if the users screen is too small and it will display the menu options. -->
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
+<!-- This div displays all of the menu options in the navigation bar. -->
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
+            
+            <!-- Go to home page. -->
               <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+              <!-- Go to about page. -->
 	          <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+              <!-- Go to services page. -->
 	          <li class="nav-item"><a href="/services" class="nav-link">Services</a></li>
+              <!-- Go to pricing page. -->
 			  <li class="nav-item"><a href="/pricing" class="nav-link">Pricing</a></li>
+              <!-- Go to psychotherapy page. -->
 			  <li class="nav-item"><a href="/psychotherapy" class="nav-link">Psychotherapy</a></li>
+              <!-- Go to tele-therapy page. -->
 			  <li class="nav-item"><a href="/teletherapy" class="nav-link">Tele-therapy</a></li>
+              
+              <!-- If the user is signed in then display the first name and last name of the user
+                 which will redirect to the schedule appointment page-->
 			  @if (Route::has('login'))
                 @auth
                   <li class="nav-item"><a href="{{ url('/home') }}" class="nav-link">{{ Auth::user()->firstname }} {{ Auth::user()->lastname }}</a></li>
-                @else
+              <!-- 
+                   Otherwise display the login and create account option(schedule appointment)     
+             -->
+              @else
                   <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">Login</a></li>
 
                   @if (Route::has('register'))
@@ -143,7 +173,7 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-
+<!-- Import scripts -->
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
