@@ -2,7 +2,16 @@
 
 @section('content')
 
+<!-- 
+Author: Aubrey Nickerson
+Date: May 12th, 2020
+Program: verify.blade.php
+Project: Counselling Website
 
+This page is displayed when a user clicks the create account button.
+Before an account is created, a user must verify their email
+address.
+-->
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
