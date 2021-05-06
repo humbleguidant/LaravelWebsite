@@ -5,6 +5,11 @@ Author: Aubrey Nickerson
 Date: May 5th, 2020
 Program: HomeController.php
 Project: Counselling Website Project
+
+This controller handles the backend functionality of the
+request appointment page. It checks to see if the user is 
+logged in before accessing the page. If not logged in then the 
+user is redirected to the welcome page. 
 */
 use Illuminate\Http\Request;
 
