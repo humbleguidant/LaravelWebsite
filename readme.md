@@ -6,6 +6,6 @@ The web pages of this website is in the resources/views/. The back end logic is 
 
 # Functional Requirements
 1. User should be able to login.<br/><br/>
-![alt text](https://github.com/humbleguidant/LaravelWebsite/blob/master/Screenshots/Login.PNG?raw=true) <br /> <br />
+![alt text](https://github.com/humbleguidant/LaravelWebsite/blob/main/Screenshots/Login.PNG?raw=true) <br /> <br />
 
 # Non Functional Requirements
