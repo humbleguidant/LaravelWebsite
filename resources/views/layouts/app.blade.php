@@ -138,7 +138,8 @@ verify email page, and schedule appointment page.
         <!-- 
              Display other html files in the yield content.
              The other html files will extend the content like
-             @extend('content') 
+             @extends('layouts.app')
+             @section('content') 
          -->
         <main class="py-4">
             @yield('content')
