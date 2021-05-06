@@ -9,7 +9,10 @@ Project: Counselling Website
 
 This is the request appointment page.
 When the user logs in, they are redirected 
-to this page. The page includes four 
+to this page. The page includes three fields.
+a schedule for what day the user would like to 
+make an appointment, a phone number field, and 
+additional comments. 
 -->
 
 <!-- Display the schedule appointment form -->
