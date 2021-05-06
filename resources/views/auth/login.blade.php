@@ -48,7 +48,7 @@ they are redirected to the request appointment page.
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
-                            <!-- Display an error message if password is empty or if passwords do not match with confrim password. -->
+                            <!-- Display an error message if password is empty. -->
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
