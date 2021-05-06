@@ -22,4 +22,9 @@ The web pages of this website is in the resources/views/. The back end logic is 
 ![alt text](https://github.com/humbleguidant/LaravelWebsite/blob/main/Screenshots/ResetPasswordEmail.PNG?raw=true) <br /> <br />
 8. Reset the password <br/> <br/>
 ![alt text](https://github.com/humbleguidant/LaravelWebsite/blob/main/Screenshots/ResetPassword.PNG?raw=true) <br /> <br />
+
 # Non Functional Requirements
+1. Quickly send email <br /> <br />
+2. Request appointment form easily submitted <br /> <br />
+3. Sign-in as client <br /> <br />
+4. run on Nginx web server <br /> <br />
