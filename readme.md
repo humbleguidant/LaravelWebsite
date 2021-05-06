@@ -20,4 +20,6 @@ The web pages of this website is in the resources/views/. The back end logic is 
 ![alt text](https://github.com/humbleguidant/LaravelWebsite/blob/main/Screenshots/Reset.PNG?raw=true) <br /> <br />
 7. An email will be sent to reset the password <br/> <br/>
 ![alt text](https://github.com/humbleguidant/LaravelWebsite/blob/main/Screenshots/ResetPasswordEmail.PNG?raw=true) <br /> <br />
+8. Reset the password <br/> <br/>
+![alt text](https://github.com/humbleguidant/LaravelWebsite/blob/main/Screenshots/ResetPassword.PNG?raw=true) <br /> <br />
 # Non Functional Requirements
