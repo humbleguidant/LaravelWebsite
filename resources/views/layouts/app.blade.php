@@ -3,6 +3,13 @@ Author: Aubrey Nickerson
 Date May 3rd, 2020
 Program: app.blade.php
 Project: Counselling Website
+
+
+This is the menu navigation bar of the website.
+The menu options are Home, About, Services, Pricing,
+Psychotherapy, Teletherapy, Login, and Schedule Appointment.
+This page extends the login page, register page, reset password page,
+verify email page, and schedule appointment page.
 -->
 
 
