@@ -12,7 +12,7 @@ logged in before accessing the page. If not logged in then the
 user is redirected to the welcome page. It then checks to see
 if all of the required fields are filled. It adds the field values
 to an array and sends to the RequestAppointment Mail object to handle.
-RequestAppointment is located in /app/Http/Mail.
+RequestAppointment is located in /app/Mail.
 */
 use App\Mail\RequestAppointment;
 use App\User;
@@ -40,7 +40,7 @@ class RequestAppointmentController extends Controller
             'message' => $request->message
         );
 
-        // Pass array to RequestAppointment object located in /app/Http/Mail.
+        // Pass array to RequestAppointment object located in /app/Mail.
         Mail::to('counseling4life.ca@gmail.com')->send(new RequestAppointment($user, $data));
         return back()->with('success', 'Your request has been sent and will be reviewed. You will be contacted by email or phone as soon as possible.');
     }
