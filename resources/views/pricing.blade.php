@@ -206,7 +206,6 @@ Standing appointments can be arranged.  My fees are as follows:</p>
             </div>
           </div>
         </div>
-      </div>
       
     </footer>
     
